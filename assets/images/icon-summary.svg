@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Summary Post Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5,4 L19,4 L19,20 L5,20 L5,4 Z" stroke="#FFB400" stroke-width="1.5"></path>
+        <path d="M8,8 L16,8" stroke="#FFB400" stroke-width="1.5"></path>
+        <path d="M8,12 L16,12" stroke="#FFB400" stroke-width="1.5"></path>
+        <path d="M8,16 L13,16" stroke="#FFB400" stroke-width="1.5"></path>
+        <circle cx="17" cy="17" r="2" stroke="#FFB400" stroke-width="1.5"></circle>
+    </g>
+</svg>
