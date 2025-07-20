@@ -5,7 +5,10 @@
 .project-img img[src="./assets/images/summary.jpeg"],
 .project-img img[src="./assets/images/RP-1.webp"],
 .project-img img[src="./assets/images/RP-2.png"],
-.project-img img[src="./assets/images/RP-3.svg"] {
+.project-img img[src="./assets/images/RP-3.svg"],
+.project-img img[src="./assets/images/swot.png"],
+.project-img img[src="./assets/images/matrix.png"],
+.project-img img[src="./assets/images/Action-plan.webp"] {
   height: 194.49px;
   object-fit: cover;
 }
