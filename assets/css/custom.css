@@ -2,7 +2,10 @@
 .project-img img[src="./assets/images/krr-reflection.webp"],
 .project-img img[src="./assets/images/kr-ontology.webp"],
 .project-img img[src="./assets/images/NA-rcode.jpg"],
-.project-img img[src="./assets/images/summary.jpeg"] {
+.project-img img[src="./assets/images/summary.jpeg"],
+.project-img img[src="./assets/images/RP-1.webp"],
+.project-img img[src="./assets/images/RP-2.png"],
+.project-img img[src="./assets/images/RP-3.svg"] {
   height: 194.49px;
   object-fit: cover;
 }
