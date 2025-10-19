@@ -14,7 +14,9 @@
 .project-img img[src="/assets/images/IA-Presentation.png"],
 .project-img img[src="/assets/images/IA-SpeakingNotes.png"],
 .project-img img[src="/assets/images/IA-ACL-Discussion.png"],
-.project-img img[src="/assets/images/IA-ACL-discussion-Summary.png"] {
+.project-img img[src="/assets/images/IA-ACL-discussion-Summary.png"],
+.project-img img[src="/assets/images/IA-Code.png"],
+.project-img img[src="/assets/images/IA-Reflection.png"] {
   height: 194.49px;
   object-fit: cover;
 }

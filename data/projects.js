@@ -137,7 +137,7 @@ export const projectsData = [
   },
   {
     href: "https://drive.google.com/file/d/1t7JuL-nqCbN0CV3kKcIjUQWAiBJzEgRO/view?usp=sharing",
-    imgSrc: "/assets/images/intelligent-agents-code.svg",
+    imgSrc: "/assets/images/IA-Code.png",
     imgAlt: "Code for the project",
     title: "Code: Academic research agent",
     category: "Intelligent Agents",
@@ -177,7 +177,7 @@ export const projectsData = [
   },
   {
     href: "https://docs.google.com/document/d/1VZKnKhoLQKXGlxrMaXpAxe6oeuSKuUhCUbL3JYRVYww/edit?usp=sharing",
-    imgSrc: "/assets/images/intelligent-agents-reflection.svg",
+    imgSrc: "/assets/images/IA-Reflection.png",
     imgAlt: "Reflection for the project",
     title: "Reflection for the project",
     category: "Intelligent Agents",
