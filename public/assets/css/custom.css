@@ -62,3 +62,71 @@
   border: 1px solid var(--jet);
   border-radius: 8px;
 }
+
+/* Discussion Modal Styles */
+.discussion-thread {
+  padding-top: 20px;
+}
+
+.main-post {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--jet);
+}
+
+.discussion-replies {
+  padding-left: 30px;
+  border-left: 2px solid var(--jet);
+  margin-top: 25px;
+}
+
+.reply-post {
+  margin-bottom: 25px;
+}
+
+.discussion-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.discussion-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-author {
+  font-weight: 600;
+  font-size: var(--fs-5);
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 15px;
+}
+
+.post-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.references {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed var(--jet);
+}
+
+.references h5 {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  margin-bottom: 10px;
+}
+
+.references ul {
+  padding-left: 20px;
+}
+
+.references li {
+  font-size: var(--fs-7);
+  color: var(--light-gray);
+  margin-bottom: 5px;
+  line-height: 1.5;
+}

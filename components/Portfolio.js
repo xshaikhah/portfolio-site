@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { projectsData } from '../data/projects';
 import ProjectModal from './ProjectModal';
+import DiscussionModal from './DiscussionModal';
 
 const Portfolio = ({ active }) => {
   const router = useRouter();
@@ -13,6 +14,7 @@ const Portfolio = ({ active }) => {
 
   const [isSelectOpen, setIsSelectOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isDiscussionModalOpen, setIsDiscussionModalOpen] = useState(false);
 
   const filters = ['All', 'AI', 'Knowledge Representation', 'Numerical Analysis', 'ML', 'Research methods', 'Summary Post', 'Intelligent Agents'];
 
@@ -27,6 +29,9 @@ const Portfolio = ({ active }) => {
     if (project.title === 'Project Report - Academic research agent') {
       e.preventDefault();
       setSelectedProject(project);
+    } else if (project.title === 'Agent Communication Languages - Discussion') {
+      e.preventDefault();
+      setIsDiscussionModalOpen(true);
     }
   };
 
@@ -69,6 +74,7 @@ const Portfolio = ({ active }) => {
 
         <ul className="project-list">
           {selectedProject && <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />}
+          {isDiscussionModalOpen && <DiscussionModal onClose={() => setIsDiscussionModalOpen(false)} />}
           {projectsData.map((project, index) => (
             <li 
               className={`project-item ${activeFilter === 'All' || activeFilter === project.dataCategory ? 'active' : ''}`}
