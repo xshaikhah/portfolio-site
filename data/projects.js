@@ -120,7 +120,7 @@ export const projectsData = [
     dataCategory: "Summary Post"
   },
   {
-    href: "https://docs.google.com/document/d/1W8hbTwSyeyQPiMiF21Vh9rQV4KNWWXSKikAgvqbBNDY/edit?usp=sharing",
+    href: "https://docs.google.com/document/d/13F2ncIBRYdCUWXsstZImpBY4HkuiXea54CqXEegfeJc/edit?usp=drive_link",
     imgSrc: "/assets/images/IA-report.png",
     imgAlt: "Project Report",
     title: "Project Report - Academic research agent",
