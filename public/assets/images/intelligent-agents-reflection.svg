@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#1f1f22"/>
+<path d="M100 50 C70 50, 50 70, 50 100 C50 130, 70 150, 100 150 C110 150, 120 145, 125 140 M100 50 C130 50, 150 70, 150 100 C150 130, 130 150, 100 150" stroke="#ffdb70" stroke-width="4" fill="none"/>
+<circle cx="90" cy="90" r="5" fill="#ffdb70"/>
+<path d="M90 95 C95 105, 105 105, 110 95" stroke="#ffdb70" stroke-width="2" fill="none"/>
+<text x="100" y="180" font-family="Poppins, sans-serif" font-size="14" fill="#e0e0e0" text-anchor="middle">Reflection</text>
+</svg>

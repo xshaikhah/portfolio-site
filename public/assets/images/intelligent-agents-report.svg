@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#1f1f22"/>
+<path d="M60 40 H140 V160 H60Z" stroke="#ffdb70" stroke-width="4" fill="none"/>
+<line x1="70" y1="60" x2="130" y2="60" stroke="#ffdb70" stroke-width="2"/>
+<line x1="70" y1="80" x2="130" y2="80" stroke="#ffdb70" stroke-width="2"/>
+<line x1="70" y1="100" x2="110" y2="100" stroke="#ffdb70" stroke-width="2"/>
+<text x="100" y="180" font-family="Poppins, sans-serif" font-size="14" fill="#e0e0e0" text-anchor="middle">Project Report</text>
+</svg>

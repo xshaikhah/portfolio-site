@@ -118,5 +118,69 @@ export const projectsData = [
     title: "Summary Post",
     category: "Reflection on Hutson",
     dataCategory: "Summary Post"
+  },
+  {
+    href: "https://docs.google.com/document/d/1W8hbTwSyeyQPiMiF21Vh9rQV4KNWWXSKikAgvqbBNDY/edit?usp=sharing",
+    imgSrc: "/assets/images/IA-report.png",
+    imgAlt: "Project Report",
+    title: "Project Report - Academic research agent",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/document/d/11ZTH24N8XcW_Tmxxe1wOERTNAbUX7d3T/edit",
+    imgSrc: "/assets/images/IA-outline.png",
+    imgAlt: "Work Outline",
+    title: "Work Outline - Academic research agent",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://drive.google.com/file/d/1t7JuL-nqCbN0CV3kKcIjUQWAiBJzEgRO/view?usp=sharing",
+    imgSrc: "/assets/images/intelligent-agents-code.svg",
+    imgAlt: "Code for the project",
+    title: "Code for the project => Academic research agent",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/presentation/d/1tm8gZRXKKQzx8a6XEqhsaCBoyyLFmti9/edit?usp=drive_link&ouid=108239562569104285155&rtpof=true&sd=true",
+    imgSrc: "/assets/images/IA-Presentation.png",
+    imgAlt: "ppt for the project",
+    title: "ppt for the project",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/document/d/1qJVuF6cdPdCTxU0lLzEReiSQOxyw0k9d/edit?usp=drive_link&ouid=108239562569104285155&rtpof=true&sd=true",
+    imgSrc: "/assets/images/intelligent-agents-notes.svg",
+    imgAlt: "speaking notes for the ppt",
+    title: "speaking notes for the ppt",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/document/d/1SN1N7u5RGfnfSm0m6lk0-iijjkyunqF5/edit?usp=sharing&ouid=108239562569104285155&rtpof=true&sd=true",
+    imgSrc: "/assets/images/intelligent-agents-acl-discussion.svg",
+    imgAlt: "Agent Communication Languages - Discussion",
+    title: "Agent Communication Languages - Discussion",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/document/d/1_Y1rdlyY0Zrq44jBEYZNiM2fGCrWOsER4e8mjY893yc/edit?usp=drive_link",
+    imgSrc: "/assets/images/intelligent-agents-acl-summary.svg",
+    imgAlt: "Agent Communication Languages - Summary",
+    title: "Agent Communication Languages - Summary",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
+  },
+  {
+    href: "https://docs.google.com/document/d/1VZKnKhoLQKXGlxrMaXpAxe6oeuSKuUhCUbL3JYRVYww/edit?usp=sharing",
+    imgSrc: "/assets/images/intelligent-agents-reflection.svg",
+    imgAlt: "Reflection for the project",
+    title: "Reflection for the project",
+    category: "Intelligent Agents",
+    dataCategory: "Intelligent Agents"
   }
 ];

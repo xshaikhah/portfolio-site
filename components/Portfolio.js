@@ -7,7 +7,7 @@ const Portfolio = ({ active }) => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
-  const filters = ['All', 'AI', 'Knowledge Representation', 'Numerical Analysis', 'ML', 'Research methods', 'Summary Post'];
+  const filters = ['All', 'AI', 'Knowledge Representation', 'Numerical Analysis', 'ML', 'Research methods', 'Summary Post', 'Intelligent Agents'];
 
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);

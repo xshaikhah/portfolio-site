@@ -1605,6 +1605,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     gap: 25px;

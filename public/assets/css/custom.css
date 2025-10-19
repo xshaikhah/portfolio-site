@@ -8,7 +8,15 @@
 .project-img img[src="./assets/images/RP-3.svg"],
 .project-img img[src="./assets/images/swot.png"],
 .project-img img[src="./assets/images/matrix.png"],
-.project-img img[src="./assets/images/Action-plan.webp"] {
+.project-img img[src="./assets/images/Action-plan.webp"],
+.project-img img[src="/assets/images/IA-report.png"],
+.project-img img[src="/assets/images/IA-outline.png"],
+.project-img img[src="/assets/images/IA-Presentation.png"] {
+  height: 194.49px;
+  object-fit: cover;
+}
+
+.project-img img[src^="/assets/images/intelligent-agents-"] {
   height: 194.49px;
   object-fit: cover;
 }
