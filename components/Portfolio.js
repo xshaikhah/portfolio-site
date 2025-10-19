@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { projectsData } from '../data/projects';
+import ProjectModal from './ProjectModal';
 
 const Portfolio = ({ active }) => {
   const router = useRouter();
@@ -11,6 +12,7 @@ const Portfolio = ({ active }) => {
   const activeFilter = searchParams.get('filter') || 'All';
 
   const [isSelectOpen, setIsSelectOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const filters = ['All', 'AI', 'Knowledge Representation', 'Numerical Analysis', 'ML', 'Research methods', 'Summary Post', 'Intelligent Agents'];
 
@@ -19,6 +21,13 @@ const Portfolio = ({ active }) => {
     params.set('filter', filter);
     router.push(`${pathname}?${params.toString()}`);
     setIsSelectOpen(false);
+  };
+
+  const handleProjectClick = (e, project) => {
+    if (project.title === 'Project Report - Academic research agent') {
+      e.preventDefault();
+      setSelectedProject(project);
+    }
   };
 
   return (
@@ -59,6 +68,7 @@ const Portfolio = ({ active }) => {
         </div>
 
         <ul className="project-list">
+          {selectedProject && <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />}
           {projectsData.map((project, index) => (
             <li 
               className={`project-item ${activeFilter === 'All' || activeFilter === project.dataCategory ? 'active' : ''}`}
@@ -66,7 +76,7 @@ const Portfolio = ({ active }) => {
               data-category={project.dataCategory} 
               key={index}
             >
-              <a href={project.href} target="_blank" rel="noopener noreferrer">
+              <a href={project.href} target="_blank" rel="noopener noreferrer" onClick={(e) => handleProjectClick(e, project)}>
                 <figure className="project-img">
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>

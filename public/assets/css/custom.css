@@ -25,3 +25,40 @@
   height: 194.49px;
   object-fit: cover;
 }
+
+.project-details .uml-diagrams {
+  margin-top: 20px;
+}
+
+.testimonials-modal {
+  max-width: 800px; /* Increased width */
+  width: 90%;
+  max-height: 90vh; /* Added max-height */
+  overflow-y: auto; /* Added scroll for overflow */
+}
+
+.project-details .uml-diagrams {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-details .uml-diagrams {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+}
+
+.project-details .uml-item h5 {
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-details .uml-diagrams img {
+  width: 100%;
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+}
