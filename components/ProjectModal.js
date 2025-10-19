@@ -1,5 +1,8 @@
 "use client";
 
+const isProd = process.env.NODE_ENV === 'production';
+const assetPrefix = isProd ? '/portfolio-site' : '';
+
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
 
@@ -21,11 +24,11 @@ const ProjectModal = ({ project, onClose }) => {
             <div className="uml-diagrams">
               <div className="uml-item">
                 <h5>UML Diagram</h5>
-                <img src="/images/UML diagram.png" alt="UML Diagram" />
+                <img src={`${assetPrefix}/images/UML diagram.png`} alt="UML Diagram" />
               </div>
               <div className="uml-item">
                 <h5>Sequence Diagram</h5>
-                <img src="/images/SequenceDiagram.png" alt="Sequence Diagram" />
+                <img src={`${assetPrefix}/images/SequenceDiagram.png`} alt="Sequence Diagram" />
               </div>
             </div>
           </div>

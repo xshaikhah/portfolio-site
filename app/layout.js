@@ -1,5 +1,8 @@
 import Script from 'next/script';
 
+const isProd = process.env.NODE_ENV === 'production';
+const assetPrefix = isProd ? '/portfolio-site' : '';
+
 export const metadata = {
   title: 'Shaikha Alharthi - Academic Portfolio',
 };
@@ -8,11 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href={`${assetPrefix}/assets/images/logo.ico`} type="image/x-icon" />
 
         {/* Custom CSS link */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/custom.css" />
+        <link rel="stylesheet" href={`${assetPrefix}/assets/css/style.css`} />
+        <link rel="stylesheet" href={`${assetPrefix}/assets/css/custom.css`} />
 
         {/* Google font link */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

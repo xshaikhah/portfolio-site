@@ -7,6 +7,9 @@ import Sidebar from '../components/Sidebar';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 
+const isProd = process.env.NODE_ENV === 'production';
+const assetPrefix = isProd ? '/portfolio-site' : '';
+
 function PageContent() {
   const searchParams = useSearchParams();
   const activePage = searchParams.get('page') || 'about';
@@ -52,7 +55,7 @@ function PageContent() {
             <ul className="service-list">
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-design.svg" alt="AI icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-design.svg`} alt="AI icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">AI</h4>
@@ -63,7 +66,7 @@ function PageContent() {
               </li>
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-dev.svg" alt="Knowledge icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-dev.svg`} alt="Knowledge icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">Knowledge Representation and Reasoning</h4>
@@ -74,7 +77,7 @@ function PageContent() {
               </li>
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-app.svg" alt="ML icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-app.svg`} alt="ML icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">Machine Learning</h4>
@@ -85,7 +88,7 @@ function PageContent() {
               </li>
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-numerical.svg" alt="numerical icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-numerical.svg`} alt="numerical icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">Numerical Analysis</h4>
@@ -96,7 +99,7 @@ function PageContent() {
               </li>
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-dev.svg" alt="research methods icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-dev.svg`} alt="research methods icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">Research methods and professional practice</h4>
@@ -107,7 +110,7 @@ function PageContent() {
               </li>
               <li className="service-item">
                 <div className="service-icon-box">
-                  <img src="/assets/images/icon-summary.svg" alt="summary icon" width="40" />
+                  <img src={`${assetPrefix}/assets/images/icon-summary.svg`} alt="summary icon" width="40" />
                 </div>
                 <div className="service-content-box">
                   <h4 className="h4 service-item-title">Summary Post</h4>
