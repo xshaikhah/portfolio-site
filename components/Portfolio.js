@@ -6,9 +6,6 @@ import { projectsData } from '../data/projects';
 import ProjectModal from './ProjectModal';
 import DiscussionModal from './DiscussionModal';
 
-const isProd = process.env.NODE_ENV === 'production';
-const assetPrefix = isProd ? '/portfolio-site' : '';
-
 const Portfolio = ({ active }) => {
   const router = useRouter();
   const pathname = usePathname();
@@ -90,7 +87,7 @@ const Portfolio = ({ active }) => {
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src={`${assetPrefix}${project.imgSrc}`} alt={project.imgAlt} loading="lazy" />
+                  <img src={project.imgSrc} alt={project.imgAlt} loading="lazy" />
                 </figure>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-category">{project.category}</p>

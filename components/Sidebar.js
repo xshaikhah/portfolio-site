@@ -2,16 +2,13 @@
 
 import { useState } from 'react';
 
-const isProd = process.env.NODE_ENV === 'production';
-const assetPrefix = isProd ? '/portfolio-site' : '';
-
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <aside className={`sidebar ${isOpen ? 'active' : ''}`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src={`${assetPrefix}/assets/images/avatar.webp`} alt="Shaikha" width="80" />
+          <img src="/assets/images/avatar.webp" alt="Shaikha" width="80" />
         </figure>
 
         <div className="info-content">
