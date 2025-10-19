@@ -11,7 +11,10 @@
 .project-img img[src="./assets/images/Action-plan.webp"],
 .project-img img[src="/assets/images/IA-report.png"],
 .project-img img[src="/assets/images/IA-outline.png"],
-.project-img img[src="/assets/images/IA-Presentation.png"] {
+.project-img img[src="/assets/images/IA-Presentation.png"],
+.project-img img[src="/assets/images/IA-SpeakingNotes.png"],
+.project-img img[src="/assets/images/IA-ACL-Discussion.png"],
+.project-img img[src="/assets/images/IA-ACL-discussion-Summary.png"] {
   height: 194.49px;
   object-fit: cover;
 }

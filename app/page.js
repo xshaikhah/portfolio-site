@@ -1,12 +1,16 @@
 "use client";
 
-import { useState } from 'react';
+import { Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 
-export default function Page() {
-  const [activePage, setActivePage] = useState('about');
+function PageContent() {
+  const searchParams = useSearchParams();
+  const activePage = searchParams.get('page') || 'about';
+
   return (
     <main>
       <Sidebar />
@@ -15,13 +19,13 @@ export default function Page() {
         <nav className="navbar">
           <ul className="navbar-list">
             <li className="navbar-item">
-              <button className={`navbar-link ${activePage === 'about' ? 'active' : ''}`} onClick={() => setActivePage('about')}>About</button>
+              <Link href="/?page=about" className={`navbar-link ${activePage === 'about' ? 'active' : ''}`}>About</Link>
             </li>
             <li className="navbar-item">
-              <button className={`navbar-link ${activePage === 'portfolio' ? 'active' : ''}`} onClick={() => setActivePage('portfolio')}>Portfolio</button>
+              <Link href="/?page=portfolio" className={`navbar-link ${activePage === 'portfolio' ? 'active' : ''}`}>Portfolio</Link>
             </li>
             <li className="navbar-item">
-              <button className={`navbar-link ${activePage === 'contact' ? 'active' : ''}`} onClick={() => setActivePage('contact')}>Contact</button>
+              <Link href="/?page=contact" className={`navbar-link ${activePage === 'contact' ? 'active' : ''}`}>Contact</Link>
             </li>
           </ul>
         </nav>
@@ -116,10 +120,20 @@ export default function Page() {
           </section>
         </article>
 
-        <Portfolio active={activePage === 'portfolio'} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Portfolio active={activePage === 'portfolio'} />
+        </Suspense>
 
         <Contact active={activePage === 'contact'} />
       </div>
     </main>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PageContent />
+    </Suspense>
   );
 }

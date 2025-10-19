@@ -1,16 +1,23 @@
 "use client";
 
 import { useState } from 'react';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { projectsData } from '../data/projects';
 
 const Portfolio = ({ active }) => {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const activeFilter = searchParams.get('filter') || 'All';
+
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
   const filters = ['All', 'AI', 'Knowledge Representation', 'Numerical Analysis', 'ML', 'Research methods', 'Summary Post', 'Intelligent Agents'];
 
   const handleFilterClick = (filter) => {
-    setActiveFilter(filter);
+    const params = new URLSearchParams(searchParams);
+    params.set('filter', filter);
+    router.push(`${pathname}?${params.toString()}`);
     setIsSelectOpen(false);
   };
 

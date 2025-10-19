@@ -139,7 +139,7 @@ export const projectsData = [
     href: "https://drive.google.com/file/d/1t7JuL-nqCbN0CV3kKcIjUQWAiBJzEgRO/view?usp=sharing",
     imgSrc: "/assets/images/intelligent-agents-code.svg",
     imgAlt: "Code for the project",
-    title: "Code for the project => Academic research agent",
+    title: "Code: Academic research agent",
     category: "Intelligent Agents",
     dataCategory: "Intelligent Agents"
   },
@@ -153,7 +153,7 @@ export const projectsData = [
   },
   {
     href: "https://docs.google.com/document/d/1qJVuF6cdPdCTxU0lLzEReiSQOxyw0k9d/edit?usp=drive_link&ouid=108239562569104285155&rtpof=true&sd=true",
-    imgSrc: "/assets/images/intelligent-agents-notes.svg",
+    imgSrc: "/assets/images/IA-SpeakingNotes.png",
     imgAlt: "speaking notes for the ppt",
     title: "speaking notes for the ppt",
     category: "Intelligent Agents",
@@ -161,7 +161,7 @@ export const projectsData = [
   },
   {
     href: "https://docs.google.com/document/d/1SN1N7u5RGfnfSm0m6lk0-iijjkyunqF5/edit?usp=sharing&ouid=108239562569104285155&rtpof=true&sd=true",
-    imgSrc: "/assets/images/intelligent-agents-acl-discussion.svg",
+    imgSrc: "/assets/images/IA-ACL-Discussion.png",
     imgAlt: "Agent Communication Languages - Discussion",
     title: "Agent Communication Languages - Discussion",
     category: "Intelligent Agents",
@@ -169,7 +169,7 @@ export const projectsData = [
   },
   {
     href: "https://docs.google.com/document/d/1_Y1rdlyY0Zrq44jBEYZNiM2fGCrWOsER4e8mjY893yc/edit?usp=drive_link",
-    imgSrc: "/assets/images/intelligent-agents-acl-summary.svg",
+    imgSrc: "/assets/images/IA-ACL-discussion-Summary.png",
     imgAlt: "Agent Communication Languages - Summary",
     title: "Agent Communication Languages - Summary",
     category: "Intelligent Agents",
