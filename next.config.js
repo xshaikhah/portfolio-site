@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // The basePath is essential for GitHub Pages since the site is in a subdirectory.
+  // Always use basePath and assetPrefix
   basePath: '/portfolio-site',
-  // Set assetPrefix to match GitHub Pages URL structure
   assetPrefix: '/portfolio-site/',
   images: {
     unoptimized: true,
