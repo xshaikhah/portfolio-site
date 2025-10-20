@@ -20,19 +20,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           cache: 'npm'
+
       - name: Install dependencies
+        working-directory: ./portfolio-site
         run: npm install
+
       - name: Build with Next.js
+        working-directory: ./portfolio-site
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./portfolio-site/out
 
   deploy:
     environment:
