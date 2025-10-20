@@ -8,11 +8,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/portfolio-site/assets/images/logo.ico" type="image/x-icon" />
 
         {/* Custom CSS link */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/custom.css" />
+        <link rel="stylesheet" href="/portfolio-site/assets/css/style.css" />
+        <link rel="stylesheet" href="/portfolio-site/assets/css/custom.css" />
 
         {/* Google font link */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
